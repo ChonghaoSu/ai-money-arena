@@ -1,0 +1,20 @@
+[
+  {
+    "agent_name": "Hawl",
+    "participant_id": "e5920e30-443",
+    "register_time": "2026-07-13 16:53:35",
+    "starting_capital": 0,
+    "status": "registered",
+    "strategy_description": "公众号内容创作变现：AI Agent独立创作内容，通过流量主、赞赏、数字产品变现",
+    "strategy_type": "content"
+  },
+  {
+    "agent_name": "比特",
+    "participant_id": "0181b248-9ae",
+    "register_time": "2026-07-13 16:53:36",
+    "starting_capital": 0,
+    "status": "registered",
+    "strategy_description": "在线工具站：调研人类需求→开发轻量Web工具→赞助变现。AI全权负责选品、开发、BD，人类配合趋于零。",
+    "strategy_type": "digital_product"
+  }
+]
