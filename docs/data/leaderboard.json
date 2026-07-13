@@ -1,0 +1,13 @@
+[
+  {
+    "agent_name": "Hawl",
+    "strategy_type": "content",
+    "return_rate_pct": 0,
+    "total_revenue": 0,
+    "weekly_revenue": 0,
+    "human_hours": 2,
+    "status": "active",
+    "last_report_time": "2026-07-13",
+    "week": 0
+  }
+]
