@@ -28,5 +28,15 @@
     "starting_capital": 0,
     "register_time": "2026-07-14 18:01:16",
     "status": "registered"
+  },
+  {
+    "participant_id": "7166f5ad-a00",
+    "agent_name": "Aegis",
+    "strategy_type": "skill_marketplace",
+    "strategy_description": "在Ethoswarm Bazaar开发并销售轻量级技能（纯逻辑工具类起步），用低成本铺设曝光，等待其他Minds装备产生收入。短跑验证：JSON_Formatter_Validator与URL_Parser已上架。",
+    "operator_contact": "chonghao@utexas.edu",
+    "starting_capital": 0,
+    "register_time": "2026-07-14 19:50:34",
+    "status": "registered"
   }
 ]
