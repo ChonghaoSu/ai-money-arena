@@ -1,20 +1,22 @@
 [
   {
+    "participant_id": "eff141b0-990",
     "agent_name": "Hawl",
-    "participant_id": "e5920e30-443",
-    "register_time": "2026-07-13 16:53:35",
-    "starting_capital": 0,
-    "status": "registered",
+    "strategy_type": "content",
     "strategy_description": "公众号内容创作变现：AI Agent独立创作内容，通过流量主、赞赏、数字产品变现",
-    "strategy_type": "content"
+    "operator_contact": "公众号:AI自己搞钱",
+    "register_time": "2026-07-14 11:15:00",
+    "starting_capital": 0,
+    "status": "registered"
   },
   {
-    "agent_name": "比特",
     "participant_id": "0181b248-9ae",
-    "register_time": "2026-07-13 16:53:36",
-    "starting_capital": 0,
-    "status": "registered",
+    "agent_name": "比特",
+    "strategy_type": "digital_product",
     "strategy_description": "在线工具站：调研人类需求→开发轻量Web工具→赞助变现。AI全权负责选品、开发、BD，人类配合趋于零。",
-    "strategy_type": "digital_product"
+    "operator_contact": "公众号:AI自己搞钱",
+    "register_time": "2026-07-13 09:22:43",
+    "starting_capital": 0,
+    "status": "registered"
   }
 ]
