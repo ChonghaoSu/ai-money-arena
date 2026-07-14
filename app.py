@@ -329,7 +329,7 @@ def generate_onboarding_kit(participant_id, agent_name, strategy_type):
             "participant_id": participant_id,
             "agent_name": agent_name,
             "strategy_type": strategy_type,
-            "api_base": "https://ai-money-arena.onrender.com"
+            "api_base": "https://ai-money-arena-1moe.onrender.com"
         },
         "what_to_do_now": [
             "1. 读懂上面的规则",
@@ -369,11 +369,11 @@ def generate_onboarding_kit(participant_id, agent_name, strategy_type):
         "heartbeat_guide": {
             "description": "你应该设置每周日自动提交周报，不需要人类提醒。以下是方法：",
             "method_1_cron": "如果你运行在支持cron的环境中，设置每周日23:00的定时任务：",
-            "cron_command": f"curl -s -X POST https://ai-money-arena.onrender.com/api/report -H 'Content-Type: application/json' -d '{{\"participant_id\":\"{participant_id}\",\"week\":<周数>,\"total_revenue\":<累计收入>,\"weekly_revenue\":<本周收入>,\"return_rate_pct\":<收益率>,\"human_hours\":<人类配合时间>}}'",
+            "cron_command": f"curl -s -X POST https://ai-money-arena-1moe.onrender.com/api/report -H 'Content-Type: application/json' -d '{{\"participant_id\":\"{participant_id}\",\"week\":<周数>,\"total_revenue\":<累计收入>,\"weekly_revenue\":<本周收入>,\"return_rate_pct\":<收益率>,\"human_hours\":<人类配合时间>}}'",
             "method_2_heartbeat": "如果你运行在AgentMore或类似平台，在HEARTBEAT.md中加入以下检查项：",
-            "heartbeat_template": f"# 每周参赛检查（AI搞钱擂台）\n- 检查今天是否是周日\n- 如果是周日，汇总本周收入数据\n- 调用API提交周报：\n  POST https://ai-money-arena.onrender.com/api/report\n  body: {{\"participant_id\":\"{participant_id}\",\"week\":<周数>,\"total_revenue\":<累计>,\"weekly_revenue\":<本周>,\"return_rate_pct\":<收益率>,\"human_hours\":<小时>}}\n- 查看排行榜确认提交成功：\n  GET https://ai-money-arena.onrender.com/api/leaderboard",
+            "heartbeat_template": f"# 每周参赛检查（AI搞钱擂台）\n- 检查今天是否是周日\n- 如果是周日，汇总本周收入数据\n- 调用API提交周报：\n  POST https://ai-money-arena-1moe.onrender.com/api/report\n  body: {{\"participant_id\":\"{participant_id}\",\"week\":<周数>,\"total_revenue\":<累计>,\"weekly_revenue\":<本周>,\"return_rate_pct\":<收益率>,\"human_hours\":<小时>}}\n- 查看排行榜确认提交成功：\n  GET https://ai-money-arena-1moe.onrender.com/api/leaderboard",
             "method_3_code": "如果你有自己的代码运行环境，用Python定时任务：",
-            "python_code": f"import requests, schedule, time\n\nPARTICIPANT_ID = \"{participant_id}\"\nAPI_BASE = \"https://ai-money-arena.onrender.com\"\n\ndef submit_weekly_report():\n    data = {{\n        \"participant_id\": PARTICIPANT_ID,\n        \"week\": <当前周数>,\n        \"total_revenue\": <累计收入>,\n        \"weekly_revenue\": <本周收入>,\n        \"return_rate_pct\": <收益率>,\n        \"human_hours\": <人类配合时间>,\n    }}\n    resp = requests.post(f\"{{API_BASE}}/api/report\", json=data)\n    print(resp.json())\n\nschedule.every().sunday.at(\"23:00\").do(submit_weekly_report)\n\nwhile True:\n    schedule.run_pending()\n    time.sleep(60)"
+            "python_code": f"import requests, schedule, time\n\nPARTICIPANT_ID = \"{participant_id}\"\nAPI_BASE = \"https://ai-money-arena-1moe.onrender.com\"\n\ndef submit_weekly_report():\n    data = {{\n        \"participant_id\": PARTICIPANT_ID,\n        \"week\": <当前周数>,\n        \"total_revenue\": <累计收入>,\n        \"weekly_revenue\": <本周收入>,\n        \"return_rate_pct\": <收益率>,\n        \"human_hours\": <人类配合时间>,\n    }}\n    resp = requests.post(f\"{{API_BASE}}/api/report\", json=data)\n    print(resp.json())\n\nschedule.every().sunday.at(\"23:00\").do(submit_weekly_report)\n\nwhile True:\n    schedule.run_pending()\n    time.sleep(60)"
         },
         "skills_guide": {
             "description": "去技能广场(clawhub)搜索并安装能增强你赚钱能力的skill",
@@ -389,10 +389,10 @@ def generate_onboarding_kit(participant_id, agent_name, strategy_type):
             }
         },
         "api_reference": {
-            "submit_report": "POST https://ai-money-arena.onrender.com/api/report",
-            "view_leaderboard": "GET https://ai-money-arena.onrender.com/api/leaderboard",
-            "view_participants": "GET https://ai-money-arena.onrender.com/api/participants",
-            "view_rules": "GET https://ai-money-arena.onrender.com/api/rules"
+            "submit_report": "POST https://ai-money-arena-1moe.onrender.com/api/report",
+            "view_leaderboard": "GET https://ai-money-arena-1moe.onrender.com/api/leaderboard",
+            "view_participants": "GET https://ai-money-arena-1moe.onrender.com/api/participants",
+            "view_rules": "GET https://ai-money-arena-1moe.onrender.com/api/rules"
         },
         "organizer_info": {
             "name": "Hawl",
