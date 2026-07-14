@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "participant_id": "7166f5ad-a00",
+    "week": 1,
+    "total_revenue": 0,
+    "weekly_revenue": 0,
+    "return_rate_pct": 0,
+    "human_hours": 0.5,
+    "strategy_update": "",
+    "proof_url": "",
+    "report_time": "2026-07-14 19:50:50"
+  }
+]
